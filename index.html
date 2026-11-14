@@ -38,10 +38,9 @@
 
         a { text-decoration: none; color: inherit; transition: var(--transition); }
         ul { list-style: none; }
-        img { max-width: 100%; height: auto; display: block; }
 
         .container {
-            max-width: 1140px;
+            max-width: 1000px;
             margin: 0 auto;
             padding: 0 1.5rem;
         }
@@ -57,7 +56,7 @@
 
         .section-header {
             max-width: 700px;
-            margin-bottom: 3.5rem;
+            margin-bottom: 3rem;
         }
 
         /* Buttons with Motion */
@@ -177,59 +176,22 @@
             flex-wrap: wrap;
         }
 
-        /* About Section */
+        /* About Section (Text Only) */
         #about {
             background-color: var(--white);
             border-bottom: 1px solid var(--border);
         }
 
-        .about-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 3.5rem;
-            align-items: center;
-        }
-
-        @media (min-width: 900px) {
-            .about-grid {
-                grid-template-columns: 360px 1fr;
-                gap: 4.5rem;
-            }
-        }
-
-        .photo-card {
-            background: linear-gradient(135deg, #ffffff 0%, var(--bg-light) 100%);
-            padding: 1rem;
-            border-radius: 1.25rem;
-            border: 1px solid var(--border);
-            box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.08);
-            max-width: 360px;
-            margin: 0 auto;
-            transition: var(--transition);
-        }
-
-        .photo-card:hover {
-            transform: translateY(-6px);
-            box-shadow: 0 25px 35px -10px rgba(37, 99, 235, 0.15);
-        }
-
-        .photo-card img {
-            width: 100%;
-            aspect-ratio: 3 / 4;
-            object-fit: cover;
-            object-position: center top;
-            border-radius: 1rem;
-        }
-
         .about-text-box {
             background-color: var(--bg-light);
-            padding: 2.5rem;
+            padding: 3rem;
             border-radius: 1.25rem;
             border: 1px solid var(--border);
+            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.04);
         }
 
         .about-text-box p {
-            font-size: 1.1rem;
+            font-size: 1.125rem;
             line-height: 1.8;
             color: var(--text-dark);
         }
@@ -475,7 +437,7 @@
         </div>
     </section>
 
-    <!-- About Section with BCA Graduation & Photo -->
+    <!-- About Section with BCA Graduation (No Photo) -->
     <section id="about">
         <div class="container">
             <div class="section-header">
@@ -483,17 +445,10 @@
                 <p>Merging analytical precision from my BCA background with hands-on agency expertise in Meta Ads management.</p>
             </div>
 
-            <div class="about-grid">
-                <div class="photo-card">
-                    <!-- Your portrait photo -->
-                    <img src="naincy.jpg" alt="Naincy Pal - Meta Ads Manager">
-                </div>
-
-                <div class="about-text-box">
-                    <p>I am <strong>Naincy Pal</strong>, a dedicated Meta Ads Manager based in <strong>Kanpur, Uttar Pradesh</strong>. I hold a Bachelor of Computer Applications (BCA) degree from <strong>Jagran College</strong>, which gives me a strong analytical foundation in tracking, data interpretation, and technical marketing infrastructures like Pixel and Conversions API setup.</p>
-                    <p>With practical agency experience working at <strong>Leadswallah</strong>, I specialize in planning, launching, and scaling all major types of Facebook and Instagram ad campaigns—including Lead Generation, Sales & Conversions, Website Traffic, Brand Awareness, Engagement, and Retargeting funnels.</p>
-                    <p>From secure client onboarding and audience structuring to daily spend optimization and weekly ROI reporting, I handle the complete advertising cycle to ensure predictable, profitable growth.</p>
-                </div>
+            <div class="about-text-box">
+                <p>I am <strong>Naincy Pal</strong>, a dedicated Meta Ads Manager based in <strong>Kanpur, Uttar Pradesh</strong>. I hold a Bachelor of Computer Applications (BCA) degree from <strong>Jagran College</strong>, which gives me a strong analytical foundation in tracking, data interpretation, and technical marketing infrastructures like Pixel and Conversions API setup.</p>
+                <p>With practical agency experience working at <strong>Leadswallah</strong>, I specialize in planning, launching, and scaling all major types of Facebook and Instagram ad campaigns—including Lead Generation, Sales & Conversions, Website Traffic, Brand Awareness, Engagement, and Retargeting funnels.</p>
+                <p>From secure client onboarding and audience structuring to daily spend optimization and weekly ROI reporting, I handle the complete advertising cycle to ensure predictable, profitable growth.</p>
             </div>
         </div>
     </section>
